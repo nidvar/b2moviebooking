@@ -13,16 +13,39 @@ body{
 }
 #toprow{
     display:flex;
-    background-color:wheat;
     padding:20px;
 }
 .legend{
     height:20px;
     width:20px;
-    background-color:red;
     margin:0 5px 0 30px;
+}
+.seats{
+    height:20px;
+    width:20px;
+    background-color:lightgrey;
+    margin:4px;
+}
+.reserved{
+    background-color:red;
+}
+.available{
+    background-color:lightgrey;
+}
+.yourSeat{
+    background-color:green;
 }
 
 #main{
     border:1px solid black;
 }
+
+
+.space{
+    margin-left:40px;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
