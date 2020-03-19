@@ -3,13 +3,10 @@ const rowArray = alphabet.toUpperCase().split('')
 //create row
 let result = ''
 const createRow = (row_number)=>{
-    for(let i=0; i<=22; i++){
+    for(let i=1; i<=22; i++){
         const row = document.createElement('div');
         row.classList.add('seats')
-        if(i === 6){
-            row.classList.add('space')
-        }
-        if(i === 17){
+        if(i === 7|| i === 18){
             row.classList.add('space')
         }
         if(Math.floor(Math.random()*100)>95){
@@ -19,15 +16,10 @@ const createRow = (row_number)=>{
         if(!row.classList.value.includes('reserved')){
             row.addEventListener('click',(e)=>{
                 if(row_number<10){
-                    const x = e.target.id.slice(1)
-                    const y = rowArray[row_number]+x
-                    console.log(y)
-                    console.log(result)
+                    const y = rowArray[row_number]+e.target.id.slice(1)
                     result = result +' - '+ y
-                    console.log(result)
                 }else{
-                    const x = e.target.id.slice(2)
-                    const y = rowArray[row_number]+x
+                    const y = rowArray[row_number]+e.target.id.slice(2)
                     result = result +' - '+ y
                 }
                 document.getElementById('results').innerHTML = result
