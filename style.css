@@ -25,6 +25,7 @@ body{
     width:20px;
     background-color:lightgrey;
     margin:4px;
+    cursor: pointer;
 }
 .reserved{
     background-color:red;
@@ -40,12 +41,10 @@ body{
     border:1px solid black;
 }
 
-
 .space{
     margin-left:40px;
 }
-.row{
+.rowLetter{
     display:flex;
     flex-wrap: wrap;
 }
-
