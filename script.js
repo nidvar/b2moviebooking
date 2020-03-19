@@ -37,6 +37,10 @@ const createRow = (row_number)=>{
 
 for(let i=0; i<=17; i++){
     const rowLetter = document.createElement('div');
+    const p = document.createElement('p');
+    p.classList.add('p_tag')
+    p.textContent = rowArray[i]
+    rowLetter.appendChild(p)
     rowLetter.classList.add('rowLetter')
     document.getElementById('cinema').appendChild(rowLetter)
     createRow(i)
