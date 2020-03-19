@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-*{
-    box-sizing:border-box;
-}
 body{
     font-family: 'Open Sans', sans-serif;
     display:flex;
@@ -48,3 +45,23 @@ body{
     display:flex;
     flex-wrap: wrap;
 }
+#cinemaCover{
+    min-width:720px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+      display:block;
+      text-align:center;
+    }
+    #mobile{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #toprow{
+        display:flex;
+        flex-direction: column;
+        padding:20px;
+    }
+  }
